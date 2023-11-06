@@ -24,7 +24,7 @@
     <strong>explore further </strong>
     <br />
     <br />
-    <a href="fauzanapp.github.io">View Website</a>
+    <a href="www.vibesmc.my.id">View Website</a>
     •
     <a href="https://github.com/FauzanAPP/issues">Report Bug</a>
     •
