@@ -101,13 +101,13 @@ Distributed under the MIT License.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [contributors-shield]: https://img.shields.io/github/contributors/FauzanAPP/generator-web?style=for-the-badge
-[contributors-url]: https://github.com/FauzanAPP/graphs/contributors
+[contributors-url]: https://github.com/FauzanAPP/generator-web/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/FauzanAPP/generator-web?style=for-the-badge
-[forks-url]: https://github.com/FauzanAPP/network/members
+[forks-url]: https://github.com/FauzanAPP/generator-web/network/members
 [stars-shield]: https://img.shields.io/github/stars/FauzanAPP/generator-web?style=for-the-badge
-[stars-url]: https://github.com/FauzanAPP/stargazers
+[stars-url]: https://github.com/FauzanAPP/generator-web/stargazers
 [issues-shield]: https://img.shields.io/github/issues/FauzanAPP/generator-web?style=for-the-badge
-[issues-url]: https://github.com/FauzanAPP/issues
+[issues-url]: https://github.com/FauzanAPP/generator-web/issues
 [product-screenshot]: https://i.ibb.co/mDqYh04/20231106-164527.png
 [Javascript.com]: https://img.shields.io/badge/JavaScript-yellow?style=for-the-badge&logo=javascript&logoColor=white
 [Javascript-url]: https://www.javascript.com/
