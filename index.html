@@ -1,0 +1,124 @@
+<!-- Copyright Fauzan Adyatma Pangestu XII RPL 2 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      href="https://i.ibb.co/nzpQ2Ln/20231103-181323.png"
+      type="image/x-icon"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>GenTemWeb | Home</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="src/css/style.css" />
+
+    <!-- MarkDown Library -->
+
+    <!-- Boxicons Library -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="bg-loading load-hide" id="load">
+        <div class="loading" id="loading"></div>
+        <p class="load-progress">
+          Create File:
+          <span
+            style="color: #ff6017; text-shadow: 0 0 10px #ff590c"
+            id="progress"
+          ></span>
+        </p>
+      </div>
+      <div class="bg"></div>
+      <div class="card row" id="card">
+        <h3 class="text-title">GENERATOR WEB</h3>
+        <p class="text-description">
+          Website to generate a HTML, CSS, JS programming language template.
+        </p>
+        <div class="card-box">
+          <h4 class="dropdown-description">Select Type Your Program</h4>
+          <select class="dropdown-box" id="dropdown">
+            <option value="html">HTML (HyperText Markup Language)</option>
+            <option value="css">CSS (Cascading Style Sheet)</option>
+            <option value="js">JS (JavaScript)</option>
+            <option value="unipack">UniverPack (HTML, CSS, JS)</option>
+            <option value="sunipack">Super UniverPack (CS)</option>
+          </select>
+          <div class="button-box">
+            <button onclick="onClick()" id="btn-def" type="button">
+              Download
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="card card-html" id="card-html">
+        <h3 class="text-title">GENERATOR HTML</h3>
+        <p class="text-description">Generate your HTML Language.</p>
+        <div class="card-box">
+          <div class="html-mark">
+            <div class="output-html">
+              <p>html output</p>
+            </div>
+            <h5 class="html-lang"></h5>
+          </div>
+
+          <div class="input-box">
+            <label for="title">Input Title For Your HTML</label>
+            <input
+              id="title"
+              class="input-text"
+              type="text"
+              spellcheck="false"
+              placeholder="Input Title in here..."
+            />
+            <div class="underline"></div>
+          </div>
+          <div class="button-box">
+            <button onclick="htmlEvent()" id="btn" type="button">
+              Download
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="icon-container">
+        <a href="#">
+          <div class="icon-box instagram">
+            <i class="bx bxl-instagram"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div class="icon-box facebook">
+            <i class="bx bxl-facebook-circle"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div class="icon-box github">
+            <i class="bx bxl-github"></i>
+          </div>
+        </a>
+      </div>
+      <div class="copyright">
+        <p>&copy; Copyright by Fauzan Adyatma Pangestu</p>
+      </div>
+    </div>
+
+    <!-- Main JS -->
+    <script src="src/js/main.js"></script>
+
+    <!-- Typed JS Library -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Anime JS Library -->
+    <script src="src/lib/anime.min.js"></script>
+
+    <!-- MarkDown Library -->
+  </body>
+</html>

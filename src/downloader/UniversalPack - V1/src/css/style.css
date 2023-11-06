@@ -1,0 +1,57 @@
+/* ✨ Template CSS */
+/* 🌱 Clearing */
+*,
+html {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+/* ☕ Styling Body ( Contoh )*/
+body {
+ /* Background akan berwarna hitam */
+ background-color: black;
+
+ /* Ketinggian akan setinggi vertical height layar mu */
+ height: 100vh;
+
+ /* Yang terlihat hanya 100vh!, walaupun height disetel lebih dari 100vh misal 8000px */
+ overflow: hidden;
+}
+
+/** 📃 Mulai Styling Di Bawah **/
+
+/**  Ini adalah sambungan dari file index.html bagian h1, bagi yang gak paham bisa di diemin / hapus, tapi kalo di hapus maka class di bagian h1 dihapus **/
+.text-content {
+ text-align: center;
+ position: absolute;
+ width: 100%;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ font-size: 2rem;
+ color: white;
+ text-shadow: 0 0 50px orange, 0 0 50px orange;
+ letter-spacing: 4px;
+ animation: hueColor 3s linear infinite;
+}
+
+.text-content::before {
+ content: "";
+ position: absolute;
+ height: 4%;
+ width: 0%;
+ background-color: white;
+ bottom: 0;
+ transition: 3s ease-in-out;
+}
+
+.text-content:hover::before {
+ width: 60%;
+}
+
+@keyframes hueColor {
+ to {
+  filter: hue-rotate(360deg);
+ }
+}
