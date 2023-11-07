@@ -1,0 +1,463 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Quicksand:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+/** Seleksi **/
+::selection {
+  background-color: #ff540a;
+  color: white;
+}
+
+/* Variabel */
+:root {
+  --bg-color: #242424;
+  --bg-card-color: #ffac5e22;
+  --text-color: white;
+  --shadow: #0bff4d;
+  --text-title-weight: 800;
+  --card-shadow: #000000;
+}
+
+body {
+  background-color: var(--bg-color);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.bg {
+  background-image: url("../images/bg-hp.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+.container {
+  position: relative;
+  min-height: 100%;
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+/** loading **/
+
+.bg-loading {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: #272727;
+  z-index: 1000;
+}
+
+.loading {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: 3px solid;
+  border-color: white transparent #ff7924 transparent;
+  border-radius: 50%;
+  animation: load 2s ease infinite;
+}
+
+.load-progress {
+  position: absolute;
+  top: 57%;
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+}
+
+.load-hide {
+  display: none;
+}
+
+@keyframes load {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 300px;
+  background: var(--bg-card-color);
+  border-radius: 9px;
+  backdrop-filter: blur(4px);
+}
+
+.text-title {
+  position: absolute;
+  top: 5%;
+  font-size: 1.5rem;
+  font-weight: var(--text-title-weight);
+  letter-spacing: 2px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: var(--text-title-weight);
+  color: var(--text-color);
+}
+
+.text-description {
+  color: var(--text-color);
+  position: absolute;
+  top: 15%;
+  text-align: center;
+  font-size: 0.7rem;
+  font-family: "Heebo", sans-serif;
+}
+
+.card-box {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 92%;
+  height: 240px;
+  top: 25%;
+}
+
+.dropdown-description {
+  color: var(--text-color);
+  text-align: center;
+  margin-top: 35px;
+  font-weight: 400;
+  font-family: "Heebo", sans-serif;
+  font-size: 1rem;
+}
+
+.dropdown-box {
+  position: absolute;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  overflow: auto;
+  border: 1px solid white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  align-self: center;
+  top: 25%;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+}
+
+.dropdown-box:focus {
+  outline: none;
+}
+
+.button-box {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  bottom: 23%;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.button-box button {
+  width: 120px;
+  height: 40px;
+  background-color: #ff6320;
+  border: 2px solid #ff2b04;
+  border-radius: 10px;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.button-box button:focus {
+  outline: none;
+}
+
+.card-html {
+  display: none;
+}
+
+.input-box {
+  display: grid;
+  padding: 0 20px;
+  margin-top: 45px;
+  gap: 4px;
+}
+
+.input-box label {
+  font-size: 0.9rem;
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.input-box .input-text {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: transparent;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.underline {
+  position: absolute;
+  background-color: #ff590c;
+  bottom: 55.5%;
+  width: 0%;
+  height: 1px;
+  animation: under 5s ease-in-out infinite;
+}
+
+@keyframes under {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 86.6%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+::placeholder {
+  color: white;
+}
+
+.input-box .input-text:focus {
+  outline: none;
+  caret-color: #f94e00;
+}
+
+.html-mark {
+  position: absolute;
+  top: 3%;
+  background: #f8f8f8;
+  width: 100%;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  overflow: auto;
+  padding-left: 10px;
+  padding-top: 15px;
+  padding-bottom: 13px;
+  height: 30px;
+  border: 1px solid #00000016;
+  box-shadow: 1px 2px 5px #00000069;
+}
+
+.html-lang {
+  color: #e03b00;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.output-html {
+  position: absolute;
+  display: flex;
+  background-color: #cfcfcf;
+  width: 50px;
+  height: 10px;
+  font-size: 0.5rem;
+  justify-content: center;
+  border-radius: 3px;
+  top: 0;
+  right: 0;
+  box-shadow: 0 0 5px black;
+}
+
+.mark-awal {
+  color: #969696;
+}
+
+.mark-akhir {
+  color: #ff2f00;
+}
+
+/* Icon */
+.icon-container {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  bottom: 15%;
+  width: 80%;
+  height: 50px;
+}
+
+.icon-container a {
+  text-decoration: none;
+}
+
+.icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.4rem;
+}
+
+.copyright {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright p {
+  font-family: "Quicksand";
+  color: #ffffffa9;
+  font-size: 0.9rem;
+}
+
+/** HP VERSION **/
+
+@media only screen and (max-width: 367px) {
+  .card {
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+  }
+
+  .button-box button {
+    width: 100%;
+  }
+
+  .icon-container {
+    bottom: 11%;
+  }
+}
+
+@media only screen and (min-width: 368px) and (max-width: 600px) {
+  .card {
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+  }
+
+  .button-box button {
+    width: 100%;
+  }
+
+  .icon-container {
+    width: 55%;
+  }
+
+  .icon-box {
+    font-size: 1.8rem;
+    width: 55px;
+    height: 55px;
+  }
+}
+
+/** TABLET VERSION **/
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  body {
+    height: 100vh;
+  }
+
+  .card {
+    width: 68%;
+  }
+  .text-title {
+    font-size: 1.7rem;
+  }
+
+  .text-description {
+    font-size: 0.8rem;
+    top: 17%;
+  }
+
+  .icon-container {
+    width: 50%;
+  }
+
+  .icon-box {
+    font-size: 2.4rem;
+    width: 65px;
+    height: 65px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    height: 100vh;
+  }
+  .card {
+    width: 60%;
+  }
+
+  .text-title {
+    font-size: 1.9rem;
+  }
+
+  .text-description {
+    font-size: 0.9rem;
+    top: 18%;
+  }
+
+  .icon-container {
+    width: 45%;
+  }
+
+  .icon-box {
+    font-size: 2.5rem;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/** PC VERSION **/
+@media only screen and (min-width: 1024px) and (orientation: landscape) {
+  body {
+    height: 100vh;
+  }
+
+  .bg {
+    background-image: url("../images/bg-pc.jpeg");
+  }
+
+  .card {
+    width: 50%;
+  }
+
+  .icon-container {
+    width: 30%;
+  }
+}
